@@ -34,7 +34,9 @@ body {
 
     .left_container {
         width: 50%;
-
+         @media (max-width:767px) {
+            width: 100%;
+         }
         .weather-condition {
             display: flex;
             justify-content: space-around;
@@ -63,7 +65,9 @@ body {
 
     .weathercard_container {
         display: flex;
-
+        @media (max-width:767px) {
+            // flex-wrap: wrap;
+        }
         .weathercard_card {
             .card {
                 display: flex;
@@ -73,6 +77,9 @@ body {
                 color: white;
                 min-width: 100px;
                 text-align: center;
+                  @media (max-width:767px) {
+                    min-width: unset;
+                  }
 
                 h3 {
                     font-size: 16px;
@@ -107,14 +114,21 @@ body {
 }
 
 .rightside_container {
-    position :fixed;
+    position: fixed;
     right: 22%;
     top: 20%;
 
+    @media (max-width: 767px) {
+       position: absolute;
+        bottom: 0%;
+        top: 102%;
+        right: 35%;
+    }
+
     .week-card {
-            display: flex;
-            gap: 20px;
-            margin-bottom: 30px;
+        display: flex;
+        gap: 20px;
+        margin-bottom: 30px;
         .flex-clm {
             display: flex;
             flex-direction: column;
