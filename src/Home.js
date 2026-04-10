@@ -62,7 +62,7 @@ function Home() {
                 <div>
                   <Weathercard title="scattered clouds" value={`${data.main.temp} °C`} />
                 </div>
-                <img src={icons} className='cloud-image' alt='image not found'></img>
+                <img src={icons} className='cloud-image' alt='weather-image' />
               </div>
               <div>
                 <p className='txt-center'>Air Contidions</p>
@@ -78,19 +78,19 @@ function Home() {
               <div className="forecast">
                 <div className="forecast-card">
                   <p>15:00</p>
-                  <img src={icons} alt="" className='cloud-image' />
+                  <img src={icons} alt="cloud-image" className='cloud-image' />
                   <h4>{data.main.temp} °C </h4>
                 </div>
 
                 <div className="forecast-card">
                   <p>18:00</p>
-                  <img src={icons} alt="" className='cloud-image' />
+                  <img src={icons} alt="cloud-image" className='cloud-image' />
                   <h4>23°C</h4>
                 </div>
 
                 <div className="forecast-card">
                   <p>21:00</p>
-                  <img src={icons} alt="" className='cloud-image' />
+                  <img src={icons} alt="cloud-image" className='cloud-image' />
                   <h4>19°C</h4>
                 </div>
               </div>
