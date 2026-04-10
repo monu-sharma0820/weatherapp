@@ -34,6 +34,9 @@ function Home() {
     month: "long",
     year: "numeric"
   });
+  const time = new Date();
+  const hour = String(time.getHours()).padStart(2, "0");
+  const min = String(time.getMinutes()).padStart(2, "0");
 
   return (
     <div className='main-container'>
@@ -77,7 +80,7 @@ function Home() {
               <p className='txt-blue'>3 available forecast</p>
               <div className="forecast">
                 <div className="forecast-card">
-                  <p>15:00</p>
+                  <p>{`${hour}:${min}`}</p>
                   <img src={icons} alt="cloud-image" className='cloud-image' />
                   <h4>{data.main.temp} °C </h4>
                 </div>
