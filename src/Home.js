@@ -62,7 +62,7 @@ function Home() {
                 <div>
                   <Weathercard title="scattered clouds" value={`${data.main.temp} °C`} />
                 </div>
-                <img src={icons} className='cloud-image'></img>
+                <img src={icons} className='cloud-image' alt='image not found'></img>
               </div>
               <div>
                 <p className='txt-center'>Air Contidions</p>
